@@ -1,9 +1,8 @@
 import React from 'react';
 import { Card, Button, Form } from 'react-bootstrap';
-import DropImage from './DropImage';
 import axios from 'axios';
 import Dropzone from 'react-dropzone';
-// import uploadImage from "../hooks/uploadImage";
+import 'regenerator-runtime/runtime'
 
 const DormantCard = (props) => {
   const uploadImage = async (file) => {

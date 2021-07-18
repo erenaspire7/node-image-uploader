@@ -2,10 +2,10 @@
   "name": "client",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "server": "parcel serve src/index.html -p $PORT"
   },
   "author": "",
   "license": "ISC",
