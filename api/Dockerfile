@@ -8,7 +8,6 @@ ENV API_PORT $API_PORT
 
 COPY package*.json ./
 
-RUN npm cache verify
 RUN npm install --silent
 
 COPY . .

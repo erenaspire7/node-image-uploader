@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "server": "parcel serve src/index.html -p $PORT"
+    "server": "parcel serve src/index.html -p $REACT_PORT"
   },
   "author": "",
   "license": "ISC",
