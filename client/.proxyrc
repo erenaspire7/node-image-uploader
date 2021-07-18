@@ -1,6 +1,6 @@
 {
     "/api": {
-        "target": "http://server:5000",
+        "target": "https://server:5000",
         "pathRewrite": {
             "^/api": ""
         }
