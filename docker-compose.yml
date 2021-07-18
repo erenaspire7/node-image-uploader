@@ -5,6 +5,8 @@ services:
     build:
       context: ./api
       dockerfile: Dockerfile
+      args: 
+        - API_PORT=${API_PORT}
     image: api-server
     container_name: img-api
     volumes:
@@ -17,13 +19,15 @@ services:
       - API_PORT
       - CLOUD_NAME
       - CLOUD_API_KEY
-      - CLOUD_SECRET
+      - CLOUD_SECRETx
     networks:
       - img-network
   client:
     build:
       context: ./client
       dockerfile: Dockerfile
+      args: 
+        - REACT_PORT=${REACT_PORT}
     image: client-server
     container_name: img-client
     volumes:

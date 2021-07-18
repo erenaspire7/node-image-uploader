@@ -2,7 +2,9 @@ FROM node:16.5.0-alpine
 
 WORKDIR /usr/src/client
 
-ENV REACT_PORT REACT_PORT
+ARG REACT_PORT
+
+ENV REACT_PORT $REACT_PORT
 
 COPY package*.json ./
 
