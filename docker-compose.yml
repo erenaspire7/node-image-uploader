@@ -38,6 +38,7 @@ services:
     ports:
       - ${REACT_PORT}:${REACT_PORT}
     environment:
+      - NODE_ENV=production
       - REACT_PORT
       - AUTH0-DOMAIN
       - AUTH0_CLIENT_ID
