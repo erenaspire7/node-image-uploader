@@ -14,4 +14,4 @@ COPY . .
 
 EXPOSE $REACT_PORT
 
-CMD ["npm", "run", "server"]
+CMD ["npm", "run", "dev"]
